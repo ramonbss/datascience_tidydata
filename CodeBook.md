@@ -11,8 +11,8 @@
  - Units derived from the 3-dimensional items above like their vector magnitude and their Fast Fourier Transform (FFT). 
 
 ## Tidying process overview
-The original dataset is partitioned into training and test set but it was merged and sorted to build the final tidy table. Each column will have its values grouped by the subject and the acvity and each column's values will be replaced by the mean of all its values instead of contain data collected by the sensors.
-To ease the searching in codebook I created two patterns ( The names below were taken from the original dataset and does't exists in the tidy one. Only chosen them to make the explanation as clean as possible ):
+The original dataset is partitioned into training and test set but it was merged and sorted to build the final tidy table. Each column will have its values grouped by the subject and the activity and each column's values will be replaced by the mean of all its values instead of contain data collected by the sensors.
+To ease the searching in codebook I created two patterns ( The names "tBodyAcc" and "fBodyAcc" below were taken from the original dataset and does't exists in the tidy one. Only chosen them to make the explanation as clean as possible ):
 
  - "**TF-**" this pattern means that the variable exists in the tidy dataset both in time ( when starting with 't' ) or in frequency domain ( when starting with 'f' ), e.g, tBodyAcc and fBodyAcc that respectively means the linear acceleration of the body in the time domain and in the frequency domain.
  - "**-XYZ**" this pattern means that this information exists in each of the 3-dimensional axis X, Y and Z, eg, tgravityaccmean-XYZ means that exists one column called tgravityaccmeanx, tgravityaccmeany and tgravityaccmeanz corresponding the mean of the gravitational acceleration for each axis.
